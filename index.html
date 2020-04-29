@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <section id="todos">
+        <div class="container">
+            <div class="popup-wrapper">
+                <div class="popup">
+                    <!-- <div class="popup-close">
+                        <button type="submit">X</button>
+                    </div>-->
+
+                    <div class="popup-content">
+                        <div class="inputbox">
+                            <label for="task">Enter a new task</label>
+                            <input type="text" id="task" name="task">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn-add">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">
+                <h2>To Do List </h2>
+                <i class="fas fa-clipboard-list fa-2x"></i>
+            </div>
+
+            <div class="date">
+                <div id="day"></div>
+                <div id="monthyear"></div>
+                <div id="weekday"></div>
+            </div>
+            <div class="todolist">
+                <ul>
+                    <div class="todos">
+                        <div class="todo">
+                            <li>Buy Milk</li>
+                        </div>
+                        <div class="trash">
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn-submit"><i class="fas fa-plus"> </i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/8b62f518dd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

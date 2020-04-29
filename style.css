@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+
+}
+
+#todos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.container {
+    border: 0.1rem solid rgb(248, 248, 248);
+    border-radius: 5%;
+    height: 50vh;
+    width: fit-content;
+    background-image: radial-gradient(circle at center center, rgba(217, 217, 217, 0.05) 0%, rgba(217, 217, 217, 0.05) 15%, rgba(197, 197, 197, 0.05) 15%, rgba(197, 197, 197, 0.05) 34%, rgba(178, 178, 178, 0.05) 34%, rgba(178, 178, 178, 0.05) 51%, rgba(237, 237, 237, 0.05) 51%, rgba(237, 237, 237, 0.05) 75%, rgba(138, 138, 138, 0.05) 75%, rgba(138, 138, 138, 0.05) 89%, rgba(158, 158, 158, 0.05) 89%, rgba(158, 158, 158, 0.05) 100%),
+        radial-gradient(circle at center center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 100%);
+    background-size: 42px 42px;
+    padding: 3rem;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    padding-right: 1rem;
+}
+
+.date {
+    display: flex;
+    padding-bottom: 0.5rem;
+    border-bottom: black solid 0.1rem;
+
+}
+
+#day,
+#monthyear {
+    padding-right: 1rem;
+}
+
+#day {
+    font-size: 2rem;
+    font-weight: 900;
+    color: black
+}
+
+#monthyear {
+    font-size: 0.8rem;
+}
+
+#weekday {
+    padding-left: 6rem;
+}
+
+/* Todo Lists */
+.todolist {
+    display: flex;
+
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.todos {
+    display: flex;
+    justify-content: space-between;
+    border: 0.2rem solid black;
+
+    border-radius: 25px;
+    padding: 0.8rem;
+    background-image: radial-gradient(circle at center center, rgba(217, 217, 217, 0.05) 0%, rgba(217, 217, 217, 0.05) 15%, rgba(197, 197, 197, 0.05) 15%, rgba(197, 197, 197, 0.05) 34%, rgba(178, 178, 178, 0.05) 34%, rgba(178, 178, 178, 0.05) 51%, rgba(237, 237, 237, 0.05) 51%, rgba(237, 237, 237, 0.05) 75%, rgba(138, 138, 138, 0.05) 75%, rgba(138, 138, 138, 0.05) 89%, rgba(158, 158, 158, 0.05) 89%, rgba(158, 158, 158, 0.05) 100%), radial-gradient(circle at center center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 100%);
+    background-size: 42px 42px;
+
+}
+
+.todo {
+    width: 15rem;
+    padding-right: 0.5rem;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-submit {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(97, 200, 97, 0.863);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.btn-submit:hover {
+    background-color: chartreuse;
+}
+
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.popup {
+    /*font-family: arial;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    
+    position: relative;*/
+    display: flex;
+
+    width: fit-content;
+    padding: 2rem;
+    background: white;
+}
+
+
+
+/*.popup-close {
+    display: flex;
+}*/
